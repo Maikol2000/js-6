@@ -1,0 +1,94 @@
+h2{
+    margin-bottom: -2px;
+}
+.baiMot p{
+    width: 35%;
+    background-color: #d1ecf1;
+    height: 44px;
+    border-radius: 3px;
+    color: #48738c;
+    padding-left: 15px;
+    line-height: 44px;
+}
+
+.baiHai input{
+    width: 30%;
+    height: 40px;
+    margin-top: 10px;
+    border:1.5px solid #e2e6e9;
+    padding-left: 15px;
+}
+
+.baiHai output{
+    background-color: #f8d7da;
+    width: 445px;
+    height: 20px;
+    margin-top: 10px;
+    border-radius: 3px;
+    color: #935779;
+    display: block;
+    line-height: 40px;
+    padding-left: 15px;
+}
+.baiHai button{
+    display: block;
+    margin-top: 10px;
+    border-radius: 3px;
+    border: none;
+    background-color: #dc3545;
+    color: white;
+    width: 100px;
+    height: 40px;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+
+.baiBa input{
+    width: 30%;
+    height: 40px;
+    margin-top: 10px;
+    border:1.5px solid #e2e6e9;
+    padding-left: 15px;
+}
+.baiBa output{
+    width: 445px;
+    height: 50px;
+    background-color: #d4edda;
+    color: #567e66;
+    border-radius: 3px;
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    line-height: 50px;
+    padding-left: 15px;
+}
+.baiBa button{
+    background-color: #218838;
+    border-radius: 3px;
+    border: none;
+    color: white;
+    height: 40px;
+    width: 125px;
+}
+
+.baiBon #opBaiBon{
+    border: 20px solid #343a40;
+    width: 32%;
+}
+.baiBon selection{
+    border: none;
+    height: 60px;
+    line-height: 60px;
+    display: block;
+}
+.baiBon button{
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    width: 90px;
+    height: 40px;
+    font-size: 18px;
+    font-weight: 700;
+}
