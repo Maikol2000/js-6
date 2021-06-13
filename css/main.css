@@ -70,6 +70,7 @@ h2{
     color: white;
     height: 40px;
     width: 125px;
+    cursor: pointer;
 }
 
 .baiBon #opBaiBon{
