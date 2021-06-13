@@ -24,6 +24,10 @@ function tinhTong() {
     var S = 0
     var tong = 1
     debugger
+    if((isNaN(x)) || isNaN(n)){
+        alert('Vui lòng nhập số')
+        return
+    }
     if (n >= 0) {
         for (var i = 1; i <= n; i++) {
             tong = tong * x
@@ -45,7 +49,7 @@ function tinhTong() {
 var opBaiBa = getElm('opBaiBa')
 function tinhBaiBa() {
     var giaiThua = getElm('ipBaiBa').value
-    if (giaiThua == '') {
+    if (isNaN(giaiThua)) {
         alert('Vui lòng nhập số')
         return
     } 
