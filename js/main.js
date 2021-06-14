@@ -32,7 +32,7 @@ function tinhTong() {
     for  (var i = 1; i <=n; i++) {
         tong = tong + Math.pow(x,i)
     }
-    opBaiHai.innerHTML = tong
+    opBaiHai.innerHTML = tong - 1 
     opBaiHai.style.height = '40px'
 }
 
@@ -54,7 +54,7 @@ function tinhBaiBa() {
         for (i = -1; i >= giaiThua; i--) {
             ketQuaGt = ketQuaGt * i
         }
-        opBaiBa.innerHTML = (ketQuaGt)
+        opBaiBa.innerHTML = ketQuaGt
     }
 }
 
