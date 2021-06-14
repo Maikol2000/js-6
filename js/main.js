@@ -8,10 +8,9 @@ var opBaiMot = getElm('opBaiMot')
 var n = 0;
 var tongMot = 0
 while (tongMot < 10000) {
-    tongMot = tongMot + n
+    tongMot += n
     n++
 }
-
 opBaiMot.innerHTML = 'Số nguyên dương nhỏ nhất: ' + (n - 1)
 
 // bài 2
