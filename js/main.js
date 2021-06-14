@@ -3,14 +3,15 @@ var getElm = function (id) {
     return document.getElementById(id)
 }
 // bài 1
+var opBaiMot = getElm('opBaiMot')
 
 var n = 0;
 var tongMot = 0
-while (tong < 10000) {
-    tong = tong + n
+while (tongMot < 10000) {
+    tongMot = tongMot + n
     n++
 }
-var opBaiMot = getElm('opBaiMot')
+
 opBaiMot.innerHTML = 'Số nguyên dương nhỏ nhất: ' + (n - 1)
 
 // bài 2
@@ -21,12 +22,11 @@ function tinhTong() {
 
     var S = 0
     var tong = 1
-    debugger
-    if((isNaN(x)) || isNaN(n)){
+
+    if ((isNaN(x)) || isNaN(n)) {
         alert('Vui lòng nhập số')
         return
-    }
-    if (n >= 0) {
+    } else if (n >= 0) {
         for (var i = 1; i <= n; i++) {
             tong = tong * x
             S = S + tong
@@ -43,6 +43,7 @@ function tinhTong() {
 }
 
 
+
 // bài 3
 var opBaiBa = getElm('opBaiBa')
 function tinhBaiBa() {
@@ -50,8 +51,8 @@ function tinhBaiBa() {
     if (isNaN(giaiThua)) {
         alert('Vui lòng nhập số')
         return
-    } 
-    debugger
+    }
+
     if (giaiThua >= 0) {
         var ketQuaGt = 1
         for (i = 1; i <= giaiThua; i++) {
@@ -83,7 +84,7 @@ function taoDiv() {
         n++
     }
     opBaiBon.innerHTML = itemHTML
-    debugger
+
     var selection = document.getElementsByTagName('selection')
     for (var i = 0; i < selection.length; i++) {
         if (i % 2 == 0) {
