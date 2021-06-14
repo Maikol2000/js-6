@@ -19,41 +19,31 @@ var opBaiHai = getElm('opBaiHai')
 function tinhTong() {
     var x = getElm('ipNhap_x').value
     var n = getElm('ipNhap_n').value
-
-    var S = 0
     var tong = 1
 
-    if ((isNaN(x)) || isNaN(n)) {
-        alert('Vui lòng nhập số')
+    if(isNaN(n) || isNaN(x) || n != parseInt(n)) {
+        alert('Không được nhập chữ, số thập phân')
         return
-    } else if (n >= 0) {
-        for (var i = 1; i <= n; i++) {
-            tong = tong * x
-            S = S + tong
+    } else if(n<0) {
+        for  (var i = 1; i >=n; i--) {
+            tong = tong + Math.pow(x,i)
         }
-        opBaiHai.innerHTML = (parseFloat(tong))
-    } else if (n < 0) {
-        for (var i = -1; i >= n; i--) {
-            tong = tong / x
-            S = S + tong
-        }
-        opBaiHai.innerHTML = (parseFloat(tong))
     }
+    for  (var i = 1; i <=n; i++) {
+        tong = tong + Math.pow(x,i)
+    }
+    opBaiHai.innerHTML = tong
     opBaiHai.style.height = '40px'
 }
-
-
 
 // bài 3
 var opBaiBa = getElm('opBaiBa')
 function tinhBaiBa() {
     var giaiThua = getElm('ipBaiBa').value
-    if (isNaN(giaiThua)) {
-        alert('Vui lòng nhập số')
+    if (isNaN(giaiThua) || giaiThua != parseInt(giaiThua)) {
+        alert('Không được nhập chữ, số thập phân')
         return
-    }
-
-    if (giaiThua >= 0) {
+    } else if (giaiThua >= 0) {
         var ketQuaGt = 1
         for (i = 1; i <= giaiThua; i++) {
             ketQuaGt = ketQuaGt * i
@@ -66,8 +56,8 @@ function tinhBaiBa() {
         }
         opBaiBa.innerHTML = (ketQuaGt)
     }
-
 }
+
 
 // bài 4
 var opBaiBon = getElm('opBaiBon')
