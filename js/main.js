@@ -1,13 +1,11 @@
 
-
-// bài 1
-
 var getElm = function (id) {
     return document.getElementById(id)
 }
+// bài 1
 
 var n = 0;
-var tong = 0
+var tongMot = 0
 while (tong < 10000) {
     tong = tong + n
     n++
