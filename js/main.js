@@ -11,7 +11,7 @@ while (tongMot < 10000) {
     tongMot += n
     n++
 }
-opBaiMot.innerHTML = 'Số nguyên dương nhỏ nhất: ' + (n - 1)
+opBaiMot.innerHTML = 'Số nguyên dương nhỏ nhất: ' + (n -1)
 
 // bài 2
 var opBaiHai = getElm('opBaiHai')
@@ -24,7 +24,7 @@ function tinhTong() {
         alert('Không được nhập chữ, số thập phân')
         return
     } else if(n<0) {
-        for  (var i = 1; i >=n; i--) {
+        for  (var i = -1; i >=n; i--) {
             tong = tong + Math.pow(x,i)
         }
     }
