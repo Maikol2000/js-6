@@ -82,6 +82,8 @@ h2{
     height: 60px;
     line-height: 60px;
     display: block;
+    color: white;
+    padding-left: 15px;
 }
 .baiBon button{
     background-color: #28a745;
