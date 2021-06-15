@@ -20,8 +20,12 @@ function tinhTong() {
     var n = getElm('ipNhap_n').value
     var tong = 1
 
-    if(isNaN(n) || isNaN(x) || n != parseInt(n)) {
-        alert('Không được nhập chữ, số thập phân')
+    if(x<0){
+        alert("x phải lớn hơn không, không được để trống")
+        return
+    }
+    if(isNaN(n) || isNaN(x) || n != parseInt(n))  {
+        alert('Không được nhập chữ, số thập phân, không được để trống')
         return
     } else if(n<0) {
         for  (var i = -1; i >=n; i--) {
